@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets\style.css">
+    <title>Weather App</title>
+</head>
+<body>
+    <header class="header">Weather APP
+        <p id="currentDay"></p>
+    </header>
+    <main class="container-fluid">
+        <section class="row">
+            <form class="border p-2" id="city-search-form">
+            <h1>Search for a City:</h1>
+        <input type="text" class="cityInput" placeholder="Enter City" id="userinput">
+        <input type="submit" value="Search" id="search">
+        </form>        
+    </section>
+        <ul id="row searchHistory" class="list-group">
+        </ul>
+        <h2>Today's Forecast</h2>
+        <section class="row currentWeather">
+        </section>
+        <h2>Five Day Forecast</h2>
+        <section class="row fiveDay">
+            <h3 class="col-12 "></h2>
+            <div class="d-flex"></div>
+        </section>
+    </main>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+<script src="assets\script.js"></script>
+</body>
+</html>
