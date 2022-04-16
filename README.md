@@ -9,5 +9,4 @@ Using Open Weather App API, the purpose of this project is to create a weather d
 -JavaScript
 -jQuery
 -moment.js
-=======
->>>>>>> refs/remotes/origin/main
+
