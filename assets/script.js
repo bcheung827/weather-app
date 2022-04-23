@@ -9,7 +9,7 @@ var cityName = document.querySelector('.cityName');
 var searchHistoryList = [];
 
 function weatherCondition(lat, lon) {
-    var queryURL = `http://api.openweathermap.org/data/2.5/onecall?units=imperial&lat=${lat}&lon=${lon}&appid=${apiKey}`;
+    var queryURL = `https://api.openweathermap.org/data/2.5/onecall?units=imperial&lat=${lat}&lon=${lon}&appid=${apiKey}`;
 
     $.ajax({
         url: queryURL,
@@ -91,7 +91,7 @@ function futureCondition(futureResponse) {
 
 //retrieve latitude and longitude of coordinates for the inputted city
 function getLatLon(city) {
-    var queryURL = 'http://api.openweathermap.org/geo/1.0/direct?q=' + city + '&appid=' + apiKey
+    var queryURL = 'https://api.openweathermap.org/geo/1.0/direct?q=' + city + '&appid=' + apiKey
 
     $.ajax({
         url: queryURL,
