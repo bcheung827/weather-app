@@ -159,7 +159,7 @@ $(document).ready(function () {
         console.log(`Last searched city: ${lastSearchedCity}`);
     }
 
-    displayHistory();
+    // displayHistory();
 });
 
 
