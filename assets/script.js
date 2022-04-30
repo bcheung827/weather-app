@@ -116,6 +116,21 @@ function getLatLon(city) {
 //     console.log("search loaded");
 //     renderSearchHistory();
 // }
+function displayHistory(){
+    $.each(searchHistoryList, function(index, value) {
+        console.log(value);
+        var li = $('<li/>');
+        li.text(value);
+        console.log(li)
+        $("#searchHistory").append(li);
+        $(li).on("click"), function (event) {
+            event.preventDefault();
+            $('.currentweather').val(event.target.textContent);
+            currentCity=$('.currentweather').val();
+            getCurrentConditions(event);
+        }
+      });
+}
 
 $("#search").on("click", function (event) {
     event.preventDefault();
@@ -144,7 +159,6 @@ $(document).ready(function () {
         console.log(`Last searched city: ${lastSearchedCity}`);
     }
 
-    console.log("Yo")
     displayHistory();
 });
 
